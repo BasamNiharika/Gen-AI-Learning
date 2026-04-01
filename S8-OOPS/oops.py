@@ -49,3 +49,10 @@ def start_vehicle(veh):
 tata = Car()
 start_vehicle(tata)
 
+
+# Magic methods in python 
+# __init__, __str__, tec..,
+
+# operator overloading in python
+#  __add__, __sub__, __mul__, __gt__
+
