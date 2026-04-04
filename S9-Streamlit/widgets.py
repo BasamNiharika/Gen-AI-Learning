@@ -23,7 +23,7 @@ st.write(f"You selected {choice}")
 data = {
     "Name":["Jane","John", "Jake","Jill"],
     "Age":[28,24,35,40],
-    "City":["New york","Los Angels","Chicago","Houston"]
+    "City":["New york","Los Angel s","Chicago","Houston"]
 }
 
 df = pd.DataFrame(data)
