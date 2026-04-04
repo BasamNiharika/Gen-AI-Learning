@@ -2,5 +2,5 @@
 -  pip install -r requirements.txt
 
 ### To run streamlit file
-## streamlit run <filename>.py
+- streamlit run <filename>.py
 - e.g: streamlit run streamlit.py
