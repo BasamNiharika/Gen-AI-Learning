@@ -150,7 +150,54 @@ print(snowball_stemmer.stem('fairly'), snowball_stemmer.stem('sportingly'))  # S
 # Conclusion:
 # There are few disadvantages of stemming techniques, that's why we go for lemmatization.
 
+# --------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------
 
+# LEMMATIZATION:
+
+# WordNet Lemmatizer
+# Lemmatization technique is like stemming. The output we will get after lemmatization is called 'lemma',which is a root word rather
+# than root stem, the output of stemming. After lemmatization, we will be getting a valid word that means the same thing.
+
+# use Cases
+# Q/A, chatbot, text summarization
+
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+''' pos values can be
+    n - Noun
+    v - verb
+    a - adverb
+    a - adjective
+'''
+
+print(lemmatizer.lemmatize("going",pos='v'))
+
+# Output
+# go
+
+for word in words:
+    print(word + "---->" + lemmatizer.lemmatize(word,pos='v'))
+
+# Output
+# eating---->eat
+# eats---->eat
+# eaten---->eat
+# writing---->write
+# writes---->write
+# programming---->program
+# programs---->program
+# history---->history
+# finally---->finally
+# finalized---->finalize
+
+print(lemmatizer.lemmatize('fairly'), lemmatizer.lemmatize('sportingly'))
+
+# Output:
+# fairly sportingly
+
+# --------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------
 
 
 
